@@ -23,8 +23,8 @@
     }
     
     img {
-  width: 100%; /* Default full width */
-  max-width: 400px; /* Limits image size */
+  width: 50%; /* Default full width */
+  max-width: 200px; /* Limits image size */
 }
 
     #message {
@@ -57,7 +57,7 @@
       height: 0;
       border-top: 20px solid transparent;
       border-bottom: 20px solid transparent;
-      border-right: 30px solid red;
+      border-right: 30px solid pink;
       top: 50%;
       left: 90%;
       transform: translateY(-50%);
@@ -67,7 +67,7 @@
       #arrow {
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
-        border-right: 25px solid red;
+        border-right: 25px solid pink;
         left: 90%;
       }
     }
@@ -76,7 +76,7 @@
       margin-top: 20px;
       padding: 15px 30px;
       font-size: 18px;
-      background-color: #f3b13a;
+      background-color: #8A2BE2;
       color: white;
       border: none;
       border-radius: 5px;
@@ -84,7 +84,7 @@
     }
 
     button:hover {
-      background-color: #e84118;
+      background-color: #DA70D6;
     }
 
  #resultCard {
@@ -112,8 +112,9 @@
   </style>
 </head>
 <body>
- <h1 style="font-family: 'League Spartan', sans-serif;">BERSERK GAMES</h1>
-  <img src="https://raw.githubusercontent.com/teestechtest/berserk-games/main/assets/Screenshot%202025-02-07%20at%2000.23.00.png" alt="Title Image" width=400">
+   <img src="https://raw.githubusercontent.com/teestechtest/interlude/main/assets/172bb5_337e5ac0f0a44e4598ff81b989fa266f~mv2.png" alt="Title Image" width=400">
+  <img src="https://raw.githubusercontent.com/teestechtest/interlude/main/assets/https___cdn.evbuc.com_images_897019803_1977871910343_1_original.avif" alt="Title Image" width=400">
+  
   <div id="message"></div>
   <div class="container">
     <div id="spinnerContainer">
@@ -140,18 +141,18 @@
       "Shotss🥃", "Shotgun🔫", "Selfie🤳",
       "Prize🏆 ", "Blank🫠",  "Shotss🥃",  "Shotgun🔫",           "Selfie🤳", "Prize🏆 ","Blank🫠"
     ];
-    const colors = ["#FF7518", "#FF4B18", "#FF9E18", "#FF3A18", "#FF6A18"];
+    const colors = ["#DA70D6", "#FF69B4", "#8A2BE2", "#FF1493", "#9932CC"];
     let spinning = false;
 
     function drawSpinner() {
       const anglePerSection = (2 * Math.PI) / segments.length;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Outer red border
+      // Outer purple border
       ctx.beginPath();
       ctx.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2, 0, 2 * Math.PI);
       ctx.lineWidth = 15;
-      ctx.strokeStyle = "red";
+      ctx.strokeStyle = "purple";
       ctx.stroke();
       ctx.closePath();
 
